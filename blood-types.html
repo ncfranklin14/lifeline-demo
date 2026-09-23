@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Blood types | Lifeline Blood Center</title>
+<meta name="description" content="Learn who you can give to and receive from.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="types">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow">Blood types</span>
+  <h1 style="margin-top:.8rem;font-size:var(--text-xl)">Who can your blood help?</h1>
+  <p>Pick your type to see who you can give to and receive from.</p>
+</div></section>
+<div class="wrap" style="margin-bottom:4rem">
+  <div class="picker" id="picker"></div>
+  <div class="compat-out" id="compat-out"><div class="card muted">Choose a blood type above.</div></div>
+  <table class="compat"><thead><tr><th>Type</th><th>Can give to</th><th>Can receive from</th><th>Supply today</th></tr></thead><tbody id="compat-table"></tbody></table>
+</div>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

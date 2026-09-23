@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Locations | Lifeline Blood Center</title>
+<meta name="description" content="Donor centers and community blood drives near you.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="locations">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow">Locations</span>
+  <h1 style="margin-top:.8rem;font-size:var(--text-xl)">Donor centers and drives</h1>
+  <p>Three full-time centers plus community drives every week.</p>
+  <form id="zip-form" style="display:flex;gap:.5rem;margin-top:1.5rem;max-width:420px"><div class="field" style="flex:1;margin:0"><label for="zip" class="skip">ZIP code</label><input id="zip" placeholder="Enter your ZIP code" inputmode="numeric"></div><button class="btn" type="submit">Search</button></form>
+  <p class="muted" id="zip-out" style="margin-top:.6rem;font-size:var(--text-sm)" aria-live="polite"></p>
+</div></section>
+<div class="wrap">
+  <div class="filters" id="filters"><button data-f="all" aria-pressed="true">All</button><button data-f="center" aria-pressed="false">Donor centers</button><button data-f="drive" aria-pressed="false">Blood drives</button></div>
+  <div class="loc-list" id="loc-list"></div>
+</div>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

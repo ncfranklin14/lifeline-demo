@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Book a donation | Lifeline Blood Center</title>
+<meta name="description" content="Pick a location, date and time to donate blood.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="book">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow">Book a donation</span>
+  <h1 style="margin-top:.8rem;font-size:var(--text-xl)">Save your spot</h1>
+  <p id="elig-note"></p>
+</div></section>
+<div class="wrap">
+  <form class="book" id="book-form" novalidate>
+    <div>
+      <fieldset><legend>1. Where</legend><div class="choice-grid" id="locs"></div></fieldset>
+      <fieldset><legend>2. When</legend><div class="chips" id="days"></div><div class="chips" id="times" style="margin-top:1rem"></div></fieldset>
+      <fieldset><legend>3. Your details</legend>
+        <div class="row-2"><div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div></div>
+        <div class="row-2"><div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="btype">Blood type (optional)</label><select id="btype" name="btype"><option value="">I don't know</option><option>O−</option><option>O+</option><option>A−</option><option>A+</option><option>B−</option><option>B+</option><option>AB−</option><option>AB+</option></select></div></div>
+      </fieldset>
+    </div>
+    <aside class="card summary">
+      <h3>Your appointment</h3>
+      <dl><dt>Location</dt><dd id="s-loc">—</dd><dt>Date</dt><dd id="s-day">—</dd><dt>Time</dt><dd id="s-time">—</dd><dt>Length</dt><dd>About 1 hour</dd></dl>
+      <button class="btn block" type="submit" id="confirm-btn">Confirm appointment</button>
+      <p class="form-error" id="err" role="alert"></p>
+      <p class="muted" style="font-size:var(--text-xs)">Bring a photo ID and eat a good meal beforehand.</p>
+    </aside>
+  </form>
+</div>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

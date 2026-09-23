@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Host a blood drive | Lifeline Blood Center</title>
+<meta name="description" content="Bring a blood drive to your school, church or workplace.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="host">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="block" style="padding-top:3rem"><div class="wrap split">
+  <div><span class="eyebrow">Host a drive</span><h1 style="margin-top:.8rem;font-size:var(--text-xl)">Turn your team into lifesavers</h1>
+    <p class="muted" style="margin-top:1rem;font-size:var(--text-lg)">We bring the chairs, staff, supplies and snacks. You find a room and 25 people willing to give an hour.</p>
+    <ul class="tips"><li><span class="n">1</span><div><b>Tell us about your group</b><span class="muted">Schools, churches and offices of any size.</span></div></li><li><span class="n">2</span><div><b>Pick a date</b><span class="muted">We'll plan the day with you 6 to 8 weeks out.</span></div></li><li><span class="n">3</span><div><b>Rally donors</b><span class="muted">We give you posters, emails and a sign-up page.</span></div></li></ul>
+  </div>
+  <img src="img/drive.jpg" alt="Volunteers checking in a donor at a blood drive in a school gym" width="1200" height="800">
+</div></section>
+<section class="block tinted" id="form"><div class="wrap" style="max-width:640px">
+  <div class="card" style="padding:2rem"><form id="host-form" novalidate>
+    <h2 style="font-size:var(--text-lg);margin-bottom:1.2rem">Request a drive</h2>
+    <div class="field"><label for="org">Organization</label><input id="org" name="org"></div>
+    <div class="row-2"><div class="field"><label for="hemail">Work email</label><input id="hemail" name="email" type="email"></div><div class="field"><label for="size">Group size</label><select id="size" name="size"><option>25–50</option><option>50–150</option><option>150+</option></select></div></div>
+    <button class="btn" type="submit">Send request</button><p class="form-error" id="host-err" role="alert"></p>
+  </form></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

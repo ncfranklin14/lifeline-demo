@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Lifeline Blood Center | Give blood, save lives</title>
+<meta name="description" content="Book a blood donation at a Lifeline donor center or community drive.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Lifeline Blood Center</span>
+    <h1 style="margin-top:.8rem">One hour.<br>Up to three lives.</h1>
+    <p class="lead">Every donation is split into red cells, plasma and platelets for patients at 40 local hospitals. Find out in 60 seconds if you can give today.</p>
+    <div class="ctas">
+      <a class="btn" href="eligibility.html" id="hero-eligibility">Check if you can donate</a>
+      <a class="btn ghost" href="book.html" id="hero-book">Book an appointment</a>
+    </div>
+    <div class="trust"><div><b>1,200</b>donors needed each week</div><div><b>3</b>donor centers</div><div><b>56 days</b>between donations</div></div>
+  </div>
+  <div class="hero-media">
+    <img src="img/hero.jpg" alt="A smiling donor in a donation chair while a nurse places a bandage on her arm" width="1800" height="1203">
+    <div class="hero-chip"><b>O−</b><span>Critically low.<br>Can you help this week?</span></div>
+  </div>
+</div></section>
+
+<section class="block tinted" id="supply-section"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Today's blood supply</span><h2 style="margin-top:.6rem">Which types we need most</h2><p class="muted">Tap your blood type to see who you can help.</p></div><a class="btn ghost sm" href="blood-types.html">Blood type guide</a></div>
+  <div class="supply" id="supply"></div>
+  <p class="type-detail muted" id="type-detail" aria-live="polite"></p>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">How it works</span><h2 style="margin-top:.6rem">About an hour, start to snacks</h2></div></div>
+  <div class="steps">
+    <div class="step"><h3>Check</h3><p>Answer six quick questions to see if you're ready to donate.</p></div>
+    <div class="step"><h3>Book</h3><p>Pick a center or community drive and a time that works for you.</p></div>
+    <div class="step"><h3>Give</h3><p>A quick health screening, then about 10 minutes of donating.</p></div>
+    <div class="step"><h3>Recover</h3><p>Juice, cookies and 15 minutes to relax. Then get on with your day.</p></div>
+  </div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+  <div class="band">
+    <div><span class="eyebrow" style="color:#ff8a9a">New</span><h2 style="margin-top:.6rem">The 60-second Eligibility Checker</h2><p>No account, no forms. Six questions tell you if you can donate today, or when you can.</p><a class="btn" href="eligibility.html" style="margin-top:1.5rem" id="band-eligibility">Start the checker</a></div>
+    <ul><li>Age and weight</li><li>How you're feeling today</li><li>Recent donations</li><li>Tattoos and travel</li></ul>
+  </div>
+</div></section>
+
+<section class="block tinted"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Upcoming drives</span><h2 style="margin-top:.6rem">Give close to home</h2></div><a class="btn ghost sm" href="locations.html">All locations</a></div>
+  <div class="grid-3" id="drives"></div>
+</div></section>
+
+<section class="block"><div class="wrap split">
+  <img src="img/story.jpg" alt="A father holding his smiling young daughter in a park" width="900" height="1350" loading="lazy" style="aspect-ratio:4/5">
+  <div><span class="eyebrow">Donor stories</span>
+    <blockquote style="margin-top:1rem">“Maya needed 14 transfusions before her third birthday. Every one came from a stranger who gave an hour.”</blockquote>
+    <cite>Daniel R., Maya's dad and now a platelet donor</cite>
+    <a class="btn" href="book.html" style="margin-top:2rem">Become someone's stranger</a>
+  </div>
+</div></section>
+
+<section class="block tinted" id="after"><div class="wrap split">
+  <div><span class="eyebrow">After you donate</span><h2 style="margin-top:.6rem">Take it easy for the rest of the day</h2>
+    <ul class="tips">
+      <li><span class="n">1</span><div><b>Drink extra water</b><span class="muted">Four extra glasses over the next 24 hours.</span></div></li>
+      <li><span class="n">2</span><div><b>Keep the bandage on</b><span class="muted">Leave it on for at least four hours.</span></div></li>
+      <li><span class="n">3</span><div><b>Skip the gym today</b><span class="muted">No heavy lifting or hard workouts until tomorrow.</span></div></li>
+    </ul>
+  </div>
+  <img src="img/after.jpg" alt="Orange juice, cookies and a bandage on a white table" width="900" height="1350" loading="lazy">
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:2.5rem">
+    <div><h2>Bring a blood drive to your team</h2><p class="muted" style="margin-top:.5rem">We bring the chairs, staff and snacks. You bring 25 donors.</p></div>
+    <a class="btn" href="host-a-drive.html">Host a drive</a>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

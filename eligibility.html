@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Eligibility Checker | Lifeline Blood Center</title>
+<meta name="description" content="Find out in 60 seconds if you can donate blood today.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<script src="app.js"></script>
+</head>
+<body data-page="eligibility">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-head"><div class="wrap" style="max-width:720px">
+  <span class="eyebrow">Eligibility Checker <span class="new">New</span></span>
+  <h1 style="margin-top:.8rem;font-size:var(--text-xl)">Can I give blood today?</h1>
+  <p>Six quick questions. No account needed.</p>
+</div></section>
+<div class="wrap">
+  <div class="quiz">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="card" id="quiz" aria-live="polite" style="padding:2rem"></div>
+    <p class="disclaimer">This checker gives a general guide only. Staff confirm eligibility at your appointment.</p>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>
