@@ -297,7 +297,7 @@ function initHost() {
 /* ---------- Guide ---------- */
 function initGuide() {
   var box = document.getElementById("links"); if (!box) return;
-  var base = location.href.replace(/[^/]*$/, "");
+  var base = "https://ncfranklin14.github.io/lifeline-demo/";
   var rows = [
     ["Friends link (random mix of sources)", "index.html?mix"],
     ["Facebook ad → Eligibility Checker", "eligibility.html?utm_source=facebook&utm_medium=paid_social&utm_campaign=fall_donor_drive"],
